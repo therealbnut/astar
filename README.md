@@ -35,3 +35,21 @@ extension ExampleState: AStarSearchable {
 
 }
 ```
+
+## Installation
+
+This is currently pre-release, but you can use it with **Swift Package Manager** from master by setting your `Package.swift` like this:
+
+```swift
+// swift-tools-version:4.2
+
+import PackageDescription
+
+let package2 = Package(
+  name: "MyProject",
+  dependencies: [
+    .package(url: "https://github.com/therealbnut/AStar.git", .branch("master"))
+  ],
+  targets: []
+)
+```
